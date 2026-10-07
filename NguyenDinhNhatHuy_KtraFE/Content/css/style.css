@@ -1,0 +1,348 @@
+﻿* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #f5f5fa;
+    font-size: 14px;
+    color: #38383d;
+}
+
+a {
+    text-decoration: none;
+    color: #808089;
+}
+
+/* === HEADER === */
+.header {
+    background: #fff;
+    padding: 16px 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.header-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.search-bar {
+    flex: 1;
+    margin: 0 40px;
+}
+
+.search-input-wrapper {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.search-icon {
+    padding: 12px 16px;
+    color: #808089;
+    background: #fff;
+}
+
+.search-input-wrapper input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-btn {
+    background: #fff;
+    border: none;
+    border-left: 1px solid #ddd;
+    padding: 0 20px;
+    color: #0a68ff;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.suggest-links {
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+    .suggest-links a {
+        margin-right: 12px;
+        color: #808089;
+    }
+
+.header-user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-item {
+    color: #808089;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* === THANH CAM KẾT === */
+.commitment-bar {
+    background: #fff;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+.commitment-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+/* === BREADCRUMB === */
+.main-body {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.breadcrumb {
+    padding: 12px 0;
+    color: #808089;
+    font-size: 13px;
+}
+
+/* === CONTAINER CHÍNH CỦA SẢN PHẨM === */
+.product-container {
+    display: flex;
+    background: #fff;
+    border-radius: 8px;
+    gap: 20px;
+    padding: 16px;
+}
+
+/* === CỘT TRÁI (Ảnh) === */
+.col-left {
+    width: 350px;
+    border-right: 1px solid #f2f2f2;
+    padding-right: 16px;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #f2f2f2;
+}
+
+.thumbnail-list {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumb {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    .thumb.active {
+        border-color: #0a68ff;
+    }
+
+.more-info-link {
+    margin-top: 20px;
+    color: #38383d;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+/* === CỘT GIỮA (Thông tin) === */
+.col-mid {
+    flex: 1;
+    border-right: 1px solid #f2f2f2;
+    padding-right: 16px;
+}
+
+.badges {
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.badge-red {
+    background: #ff424e;
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 2px;
+    margin-right: 8px;
+    font-weight: 500;
+}
+
+.badge-blue {
+    background: #e8f5fd;
+    color: #0a68ff;
+    padding: 2px 4px;
+    border-radius: 2px;
+    margin-right: 8px;
+    font-weight: 500;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+}
+
+.rating {
+    font-size: 14px;
+    color: #787878;
+    margin-bottom: 16px;
+}
+
+.stars {
+    color: #fdd836;
+    margin: 0 8px;
+}
+
+.rating a {
+    color: #0a68ff;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: 600;
+    color: #ff424e;
+    margin-bottom: 16px;
+}
+
+.variant-box {
+    display: inline-block;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.active-variant {
+    border-color: #0a68ff;
+    color: #0a68ff;
+    background: #e8f5fd;
+    font-weight: 500;
+}
+
+.shipping-info {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #f2f2f2;
+}
+
+/* === CỘT PHẢI (Mua hàng) === */
+.col-right {
+    width: 280px;
+}
+
+.seller-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f2f2f2;
+    margin-bottom: 16px;
+}
+
+.seller-logo strong {
+    font-size: 15px;
+}
+
+.buy-section .qty-label {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.qty-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.qty-btn {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ececec;
+    background: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
+
+.qty-input {
+    width: 50px;
+    height: 32px;
+    text-align: center;
+    border: 1px solid #ececec;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+.subtotal-label {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.subtotal-price {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: none;
+    font-weight: 500;
+}
+
+.btn-buy {
+    background: #ff424e;
+    color: white;
+}
+
+    .btn-buy:hover {
+        background: #e03c46;
+    }
+
+.btn-cart {
+    background: white;
+    color: #0a68ff;
+    border: 1px solid #0a68ff;
+}
+
+    .btn-cart:hover {
+        background: #e8f5fd;
+    }
+.text-yellow {
+    color: #fdd836;
+    font-weight: bold;
+}

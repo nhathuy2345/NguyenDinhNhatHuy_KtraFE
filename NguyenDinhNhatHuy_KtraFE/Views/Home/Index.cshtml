@@ -1,0 +1,289 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiki - Chi tiết sản phẩm</title>
+    <!-- Nhúng thư viện Font Awesome[cite: 2] -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Liên kết file CSS -->
+    <link rel="stylesheet" href="~/Content/css/style.css">
+</head>
+<body>
+
+    <!-- Banner Freeship trên cùng chuẩn màu -->
+    <div style="text-align: center; background-color: #f5fdfa; padding: 10px 0; font-size: 14px;">
+        <span style="color: #00ab56;">Freeship đơn từ 45k, giảm nhiều hơn cùng</span>
+
+        <!-- Chữ FREESHIP màu xanh nước biển đậm[cite: 3] -->
+        <strong style="color: #0a68ff; font-style: italic; font-family: 'Arial Black', Arial, sans-serif; margin-left: 4px; font-size: 15px;">FREESHIP</strong>
+
+        <!-- Chữ XTRA màu xanh lá[cite: 3] -->
+        <strong style="color: #00ab56; font-style: italic; font-family: 'Arial Black', Arial, sans-serif; font-size: 15px;">XTRA</strong>
+    </div>
+
+    <!-- Header (Thanh tìm kiếm và Logo)[cite: 1] -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Bắt đầu phần Logo Tiki (Có nửa chữ K màu vàng) -->
+            <div class="logo" style="text-align: left; width: 120px; margin-right: 20px;">
+                <a href="#" style="text-decoration: none; display: block; font-family: 'Arial Black', Arial, sans-serif;">
+                    <div style="font-size: 42px; font-weight: 900; letter-spacing: -2px; line-height: 0.9; display: flex;">
+                        <span style="color: #1A94FF;">TI</span>
+                        <!-- Dùng gradient chéo 45 độ: Nửa dưới màu xanh, nửa trên góc phải màu vàng -->
+                        <span style="background: linear-gradient(45deg, #1A94FF 55%, #fdd836 45%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block;">K</span>
+                        <span style="color: #1A94FF;">I</span>
+                    </div>
+                    <div style="color: #003e8c; font-size: 13px; font-weight: bold; font-family: Arial, sans-serif; margin-top: 4px;">Tốt & Nhanh</div>
+                </a>
+            </div>
+            <!-- Kết thúc phần Logo -->
+
+            <div class="search-bar">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Freeship đơn từ 45k">
+                    <button class="search-btn">Tìm kiếm</button>
+                </div>
+                <div class="suggest-links">
+                    <a href="#">điện gia dụng</a> <a href="#">xe cộ</a> <a href="#">mẹ & bé</a>
+                    <a href="#">khỏe đẹp</a> <a href="#">nhà cửa</a> <a href="#">sách</a>
+                    <a href="#">thể thao</a> <a href="#">ensure</a>
+                </div>
+            </div>
+
+            <div class="header-user">
+                <!-- Cụm bên phải: Tài khoản và Địa chỉ nằm thẳng hàng dọc -->
+                <div style="display: flex; flex-direction: column; align-items: flex-end; justify-content: center;">
+
+                    <!-- Hàng trên: Trang chủ, Tài khoản, Giỏ hàng -->
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <div style="color: #808089; cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                            <i class="fas fa-home"></i> Trang chủ
+                        </div>
+                        <div style="color: #808089; cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                            <i class="far fa-smile"></i> Tài khoản
+                        </div>
+                        <div>
+                            <i class="fas fa-shopping-cart" style="color: #1a94ff; font-size: 24px;"></i>
+                        </div>
+                    </div>
+
+                    <!-- Hàng dưới: Địa chỉ giao hàng (Nằm hẳn ở dưới, căn lề phải) -->
+                    <div style="margin-top: 6px; font-size: 13px; color: #808089; white-space: nowrap;">
+                        <i class="fas fa-map-marker-alt"></i> Giao đến:
+                        <a href="#" style="color: #38383d; text-decoration: underline; font-weight: 500;">Q. 1, P. Bến Nghé, Hồ Chí Minh</a>
+                    </div>
+
+                </div>
+            </div>
+    </header>
+
+    <!-- Thanh Cam Kết[cite: 1] -->
+    <div class="commitment-bar">
+        <div class="commitment-container">
+            <span><i class="fas fa-check-circle" style="color: #1a94ff;"></i> 100% hàng thật</span>
+            <span><i class="fas fa-shield-alt" style="color: #1a94ff;"></i> Hoàn 200% nếu hàng giả</span>
+            <span><i class="fas fa-box-open" style="color: #1a94ff;"></i> 30 ngày đổi trả</span>
+            <span><i class="fas fa-shipping-fast" style="color: #1a94ff;"></i> Giao nhanh 2h</span>
+            <span><i class="fas fa-tag" style="color: #1a94ff;"></i> Giá siêu rẻ</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-body">
+        <!-- Breadcrumb[cite: 1] -->
+        <div class="breadcrumb">
+            Trang chủ > Đồ Chơi - Mẹ & Bé > Dinh dưỡng cho người lớn > Lon Sữa Glucerna 800g/lon - Tặng 2 gói dùng thử
+        </div>
+
+        <div class="product-container">
+            <!-- Cột Trái: Ảnh Sản Phẩm[cite: 3] -->
+            <div class="col-left" style="width: 350px; border-right: 1px solid #f2f2f2; padding-right: 16px;">
+                <!-- Ảnh chính (Cấp id để JS nhận diện) -->
+                <img src="~/Content/images/ảnh sữa glucerna 1.jpg" alt="Sữa Glucerna" id="mainImage" style="width: 100%; border-radius: 8px; border: 1px solid #f2f2f2;">
+
+                <!-- Danh sách ảnh thu nhỏ bên dưới[cite: 3] -->
+                <div class="thumbnail-list" style="display: flex; gap: 10px; margin-top: 15px; justify-content: flex-start;">
+                    <!-- Ảnh 1 (Mặc định được chọn - Viền xanh) -->
+                    <img src="~/Content/images/ảnh sữa glucerna 1.jpg" class="thumb active" onclick="changeImage(this, '/Content/images/ảnh sữa glucerna 1.jpg')" style="width: 60px; height: 60px; border: 2px solid #0a68ff; border-radius: 4px; cursor: pointer;">
+
+                    <!-- Ảnh 2 -->
+                    <img src="~/Content/images/sữa glucerna 2.jpg" class="thumb" onclick="changeImage(this, '/Content/images/sữa glucerna 2.jpg')" style="width: 60px; height: 60px; border: 1px solid #ddd; border-radius: 4px; cursor: pointer;">
+
+                    <!-- Ảnh 3 -->
+                    <img src="~/Content/images/ảnh sữa glucerna 3.jpg" class="thumb" onclick="changeImage(this, '/Content/images/ảnh sữa glucerna 3.jpg')" style="width: 60px; height: 60px; border: 1px solid #ddd; border-radius: 4px; cursor: pointer;">
+                </div>
+
+                <div class="more-info-link" style="margin-top: 20px; font-weight: 500; font-size: 14px; cursor: pointer;">
+                    <i class="fas fa-info-circle" style="color: #1a94ff;"></i> Xem thêm Ưu điểm & lưu ý của sản phẩm <i class="fas fa-chevron-right" style="float: right; color: #808089;"></i>
+                </div>
+            </div>
+
+            <!-- Cột Giữa: Thông tin chi tiết[cite: 1] -->
+            <div class="col-mid">
+                <div class="badges" style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 8px;">
+                    <!-- Nhãn Top Deal -->
+                    <span class="badge-red" style="background: #ff424e; color: #fff; padding: 2px 6px; border-radius: 2px; font-weight: 500; font-size: 11px;">TOP DEAL</span>
+
+                    <!-- Nhãn 30 Ngày Đổi Trả (Mới bổ sung) -->
+                    <span style="background: #fff8e1; color: #f57c00; border: 1px solid #ffe082; padding: 1px 6px; border-radius: 2px; font-weight: 500; font-size: 11px;">
+                        <i class="fas fa-undo-alt" style="font-size: 10px;"></i> 30 NGÀY ĐỔI TRẢ
+                    </span>
+
+                    <!-- Nhãn Chính Hãng -->
+                    <span class="badge-blue" style="background: #e8f5fd; color: #0a68ff; padding: 2px 6px; border-radius: 2px; font-weight: 500; font-size: 11px;"><i class="fas fa-check"></i> CHÍNH HÃNG</span>
+
+                    <!-- Thương hiệu -->
+                    <span class="brand" style="margin-left: 4px;">Thương hiệu: <a href="#" style="color: #0a68ff;">Glucerna</a></span>
+                </div>
+
+                <h1 class="title">Lon Sữa Glucerna 800g/lon - Tặng 2 gói dùng thử</h1>
+
+                <div class="rating">
+                    5.0
+                    <span class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </span>
+                    <a href="#">(11)</a> | Đã bán 436
+                </div>
+
+                <div class="price">1.034.550₫</div>
+
+                <div class="variant">
+                    <strong>Hương vị</strong><br>
+                    <span class="variant-box active-variant">Vani</span>
+                </div>
+
+                <!-- Thông tin vận chuyển (Đã bổ sung mục Giao đúng sáng mai) -->
+                <div class="shipping-info">
+                    <h4 style="margin-bottom: 10px;">Thông tin vận chuyển</h4>
+                    <p>Giao đến <strong>Q. 1, P. Bến Nghé, Hồ Chí Minh</strong> <a href="#" style="float: right; color: #1a94ff; text-decoration: none;">Đổi</a></p>
+                    <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
+
+                    <!-- Giao siêu tốc 2h[cite: 1] -->
+                    <p style="color: #00ab56; font-weight: bold; margin-bottom: 4px;"><i class="fas fa-shipping-fast"></i> NOW Giao siêu tốc 2h</p>
+                    <p style="color: #787878; margin-top: 0; margin-bottom: 15px;">Trước 11h hôm nay: <span style="color: #00ab56;">Miễn phí</span> <del>25.000đ</del></p>
+
+                    <!-- Mục Giao đúng sáng mai (Bổ sung theo ảnh)[cite: 1] -->
+                    <p style="color: #1a94ff; font-weight: bold; margin-bottom: 4px;"><i class="fas fa-truck" style="color: #1a94ff;"></i> Giao đúng sáng mai</p>
+                    <p style="color: #787878; margin-top: 0; margin-bottom: 15px;">8h - 12h, 01/10: <span style="color: #00ab56;">Miễn phí</span> <del>19.600đ</del></p>
+
+                    <!-- Freeship Xtra[cite: 1] -->
+                    <p style="color: #38383d; display: flex; align-items: center; gap: 8px;">
+                        <i class="fas fa-truck" style="color: #00ab56;"></i>
+                        <span>Freeship 10<span class="text-yellow">k</span> đơn từ 45<span class="text-yellow">k</span>, Freeship 25<span class="text-yellow">k</span> đơn từ 100<span class="text-yellow">k</span></span>
+                        <i class="fas fa-info-circle" style="color: #808089;"></i>
+                    </p>
+                </div>
+
+                <!-- Dịch vụ bổ sung (Mục bị thiếu)[cite: 1] -->
+                <div class="additional-services" style="margin-top: 25px; padding-top: 25px; border-top: 1px solid #eee;">
+                    <h4 style="margin-top: 0; margin-bottom: 15px;">Dịch vụ bổ sung</h4>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                        <div>
+                            <span style="background: #1a94ff; color: #fff; padding: 2px 6px; border-radius: 10px; font-size: 11px; font-weight: bold; margin-right: 8px;">TIKI CARD</span>
+                            Ưu đãi đến 600k với thẻ TikiCard
+                        </div>
+                        <a href="#" style="color: #0a68ff; text-decoration: none;">Đăng ký</a>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <span style="background: #7b61ff; color: #fff; padding: 2px 6px; border-radius: 10px; font-size: 11px; font-weight: bold; margin-right: 8px;">Pay later</span>
+                            Mua trước trả sau
+                        </div>
+                        <a href="#" style="color: #0a68ff; text-decoration: none;">Đăng ký</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Cột Phải: Bảng giá, Chọn số lượng & Mua hàng[cite: 1] -->
+            <div class="col-right">
+                <!-- Thông tin người bán (Đã bổ sung icon chat) -->
+                <div class="seller-info" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 15px; border-bottom: 1px solid #eee; margin-bottom: 15px;">
+                    <div class="seller-logo">
+                        <strong style="font-size: 15px;">Tiki Trading</strong><br>
+                        <span style="background: #e8f5fd; color: #0a68ff; padding: 2px 6px; border-radius: 2px; font-size: 10px; font-weight: bold;"><i class="fas fa-check"></i> OFFICIAL</span>
+                    </div>
+                    <div class="seller-rate" style="font-size: 14px; font-weight: bold; display: flex; align-items: center; gap: 5px;">
+                        <span>4.7 <i class="fas fa-star" style="color:#fdd836"></i></span>
+                        <span style="font-weight: normal; color: #787878; font-size: 13px;">(5.5tr+ đánh giá)</span>
+                        <!-- Icon trò chuyện (Chat) -->
+                        <a href="#" style="color: #1a94ff; font-size: 15px; margin-left: 2px;" title="Chat với nhà bán">
+                            <i class="fas fa-comment-dots"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tính tiền (Yêu cầu bài thi)[cite: 2] -->
+                <div class="buy-section">
+                    <div style="font-size: 14px; margin-bottom: 10px; color: #333;">Số Lượng</div>
+
+                    <!-- Khung Tăng giảm số lượng y hệt ảnh[cite: 1] -->
+                    <div style="display: inline-flex; border: 1px solid #ececec; border-radius: 4px; margin-bottom: 20px;">
+                        <!-- Nút Trừ -->
+                        <button type="button" onclick="changeQty(-1)" style="width: 32px; height: 32px; border: none; background: #fff; cursor: pointer; color: #999; border-right: 1px solid #ececec;">
+                            <i class="fas fa-minus" style="font-size: 12px;"></i>
+                        </button>
+
+                        <!-- Ô Nhập Số -->
+                        <input type="number" id="soLuong" value="1" min="1" onchange="tinhTien()" style="width: 40px; height: 32px; text-align: center; border: none; outline: none; font-size: 14px;">
+
+                        <!-- Nút Cộng -->
+                        <button type="button" onclick="changeQty(1)" style="width: 32px; height: 32px; border: none; background: #fff; cursor: pointer; color: #999; border-left: 1px solid #ececec;">
+                            <i class="fas fa-plus" style="font-size: 12px;"></i>
+                        </button>
+                    </div>
+
+                    <!-- Phần Tạm tính chuẩn ảnh mẫu[cite: 1] -->
+                    <div style="font-size: 14px; color: #333; margin-bottom: 5px;">Tạm tính</div>
+                    <div id="tamTinh" style="font-size: 24px; font-weight: bold; color: #38383d; margin-bottom: 20px;">1.034.550₫</div>
+
+                    <button style="width: 100%; background: #ff424e; color: white; border: none; padding: 12px; border-radius: 4px; font-size: 15px; cursor: pointer; margin-bottom: 10px;">Mua ngay</button>
+                    <button style="width: 100%; background: white; color: #0a68ff; border: 1px solid #0a68ff; padding: 12px; border-radius: 4px; font-size: 15px; cursor: pointer; margin-bottom: 10px;">Thêm vào giỏ</button>
+                    <button style="width: 100%; background: white; color: #0a68ff; border: 1px solid #0a68ff; padding: 12px; border-radius: 4px; font-size: 15px; cursor: pointer;">Mua trước trả sau</button>
+                </div>
+
+                <!-- Banner Slider (Tự động nhảy mỗi 4 giây) -->
+                <div id="bannerSlider" style="position: relative; width: 100%; height: 85px; border-radius: 8px; margin-top: 20px; overflow: hidden; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+
+                    <!-- Slide 1 (Tiki Điện Máy gốc) -->
+                    <div class="slide" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #0066ff, #00b4ff); padding: 15px; display: flex; align-items: center; justify-content: space-between; color: white; transition: opacity 0.5s ease-in-out; opacity: 1; z-index: 1;">
+                        <div>
+                            <h3 style="margin: 0; color: #fdd836; font-size: 18px;">TIKI ĐIỆN MÁY</h3>
+                            <p style="margin: 5px 0 0 0; font-size: 13px;">Giá Tốt Chốt Ngay !!</p>
+                        </div>
+                        <i class="fas fa-tv" style="font-size: 30px;"></i>
+                    </div>
+
+                    <!-- Slide 2 (Banner Khuyến mãi Đỏ) -->
+                    <div class="slide" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #ff424e, #f9848a); padding: 15px; display: flex; align-items: center; justify-content: space-between; color: white; transition: opacity 0.5s ease-in-out; opacity: 0; z-index: 0;">
+                        <div>
+                            <h3 style="margin: 0; color: #fff; font-size: 18px;">SALE NỬA GIÁ</h3>
+                            <p style="margin: 5px 0 0 0; font-size: 13px;">Nhập mã giảm đến 50%</p>
+                        </div>
+                        <i class="fas fa-gift" style="font-size: 30px; color: #fdd836;"></i>
+                    </div>
+
+                    <!-- Slide 3 (Banner Freeship Xanh Lá) -->
+                    <div class="slide" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #00ab56, #42e896); padding: 15px; display: flex; align-items: center; justify-content: space-between; color: white; transition: opacity 0.5s ease-in-out; opacity: 0; z-index: 0;">
+                        <div>
+                            <h3 style="margin: 0; color: #fff; font-size: 18px;">FREESHIP XTRA</h3>
+                            <p style="margin: 5px 0 0 0; font-size: 13px;">Giao hàng 0 Đồng</p>
+                        </div>
+                        <i class="fas fa-shipping-fast" style="font-size: 30px; color: #fdd836;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="@Url.Content("~/Scripts/js/script.js")"></script>
+</body>
+</html>
